@@ -1,4 +1,4 @@
-const PROXY = "https://corsproxy.io/?url="; 
+const PROXY = "https://api.allorigins.win/raw?url=";
 const badgeRules = [
     { pts: 25,   img: "badge_50.jpg",   rank: "Level 1" },
     { pts: 50,   img: "badge_200.jpg",  rank: "Level 2" },
@@ -49,7 +49,7 @@ const backupList = [
 
 let participants = [];
 let currentSort = "desc";
-const CONCURRENCY_LIMIT = 5;
+const CONCURRENCY_LIMIT = 20;
 
 let weights = { l: 2, d: 3, f: 5, r: 4, i: 5 };
 let dateRange = { start: "2026-04-01", end: "2026-04-30" };
